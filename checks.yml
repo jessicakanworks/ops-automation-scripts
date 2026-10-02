@@ -1,0 +1,6 @@
+tcp:
+  - {name: postgres, host: 10.10.3.11, port: 5432}
+  - {name: app-8080, host: 10.10.2.11, port: 8080}
+http:
+  - {name: ifmis-login, url: "https://ifmis.example.gov.rw/login", expect: 200}
+  - {name: sdms-health, url: "https://sdms.example.gov.rw/actuator/health", expect: 200}
